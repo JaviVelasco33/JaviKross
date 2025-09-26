@@ -1,7 +1,7 @@
-import VideoCard from './VideoCard';
-import { searchVideos } from '../../utils/search';
-import type { Video } from '../../utils/search';
-import '@/styles/components/Videos/_VideoGallery.scss';
+import VideoCard from "./VideoCard";
+import { searchVideos } from "../../utils/search";
+import type { Video } from "../../utils/search";
+import "@/styles/components/Videos/_VideoGallery.scss";
 
 interface VideoGalleryProps {
     videos: Video[]
@@ -24,11 +24,11 @@ export function VideoGallery({ videos, query }: VideoGalleryProps) {
         .sort((a, b) => b - a);
 
     return (
-        <div className='gallery' style={{ display: 'flex', flexWrap: 'wrap', padding: '20px' }}>
+        <div className='gallery' style={{ display: "flex", flexWrap: "wrap", padding: "20px" }}>
             {sortedYears.map((year) => (
-                <div key={year} style={{ margin: '10px', padding: '10px', width: '100%' }}>
+                <div key={year} style={{ margin: "10px", padding: "10px", width: "100%" }}>
                     <h2>{year}</h2>
-                    <div style={{ display: 'flex', gap: '15px' }}>
+                    <div style={{ display: "flex", gap: "15px" }}>
                         {videosByYear[year]
                             .sort((a, b) => a.prio - b.prio)
                             .map((video) => (

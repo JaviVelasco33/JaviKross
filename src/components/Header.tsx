@@ -1,7 +1,7 @@
-import { Logo } from './Logo';
-import { SearchBar } from './Bars/SearchBar';
-import { ProfileMenu } from './Profile/ProfileMenu';
-import '@/styles/components/_Header.scss';
+import { Logo } from "./Logo";
+import { SearchBar } from "./Bars/SearchBar";
+import { ProfileMenu } from "./Profile/ProfileMenu";
+import "@/styles/components/_Header.scss";
 
 interface HeaderProps {
     onSearch: (query: string) => void

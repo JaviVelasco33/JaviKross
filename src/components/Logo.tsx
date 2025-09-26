@@ -4,7 +4,7 @@ export function Logo() {
             <img
                 src="/src/assets/images/logos/LogoJaviKross.png"
                 alt="Logo JaviKross"
-                style={{ width: '150px' }}
+                style={{ width: "150px" }}
             />
         </div>
     );

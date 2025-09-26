@@ -6,7 +6,8 @@
         "prio": 1,
         "tags": ["resacón", "almáchar", "primer año", "right round", "créditos", "pursuit of happiness", "2021"],
         "thumbnail": "/images/thumbs/MiniaturaJavikross2021.png",
-        "poster": "/images/posters/Poster2021.png"
+        "poster": "/images/posters/Poster2021.png",
+        "videoFile": "videos/JaviKross2021.mp4"
     },
     {
         "id": 2,
@@ -15,7 +16,8 @@
         "prio": 3,
         "tags": ["presentación", "cantantes", "almáchar", "2023"],
         "thumbnail": "/images/thumbs/Mini_Horizontal_Presen_2023.png",
-        "poster": "/images/posters/Mini_Vertical_Presen_2023.png"
+        "poster": "/images/posters/Mini_Vertical_Presen_2023.png",
+        "videoFile": "videos/video.mp4"
     },
     {
         "id": 3,
@@ -24,7 +26,8 @@
         "prio": 2,
         "tags": ["entrevistas", "cantantes", "almáchar", "2023"],
         "thumbnail": "/images/thumbs/Mini_Horizontal_Entrevistas_2023.png",
-        "poster": "/images/posters/Mini_Vertical_Entrevistas_2023.png"
+        "poster": "/images/posters/Mini_Vertical_Entrevistas_2023.png",
+        "videoFile": "videos/video.mp4"
     },
         {
         "id": 4,
@@ -33,7 +36,8 @@
         "prio": 1,
         "tags": ["aftermovie", "cantantes", "almáchar", "where them girls at", "2023"],
         "thumbnail": "/images/thumbs/MiniaturaJavikross2023.png",
-        "poster": "/images/posters/Poster2023.png"
+        "poster": "/images/posters/Poster2023.png",
+        "videoFile": "videos/video.mp4"
     },
         {
         "id": 5,
@@ -42,7 +46,8 @@
         "prio": 3,
         "tags": ["presentación", "pirámide", "peliculas", "casa cristian", "2024"],
         "thumbnail": "/images/thumbs/Mini_Horizontal_Presen_2024.png",
-        "poster": "/images/posters/Mini_Vertical_Presen_2024.png"
+        "poster": "/images/posters/Mini_Vertical_Presen_2024.png",
+        "videoFile": "videos/video.mp4"
     },
         {
         "id": 6,
@@ -51,7 +56,8 @@
         "prio": 2,
         "tags": ["tomas falsas", "peliculas", "casa cristian", "2024"],
         "thumbnail": "/images/thumbs/Mini_Horizontal_TFalsas_2024.png",
-        "poster": "/images/posters/Mini_Vertical_TFalsas_2024.png"
+        "poster": "/images/posters/Mini_Vertical_TFalsas_2024.png",
+        "videoFile": "videos/video.mp4"
     },
         {
         "id": 7,
@@ -60,7 +66,8 @@
         "prio": 1,
         "tags": ["aftermovie", "peliculas", "trabuco", "regreso al futuro", "club cant handle me", "hot", "2024"],
         "thumbnail": "/images/thumbs/MiniaturaJavikross2024.png",
-        "poster": "/images/posters/Poster2024.png"
+        "poster": "/images/posters/Poster2024.png",
+        "videoFile": "videos/video.mp4"
     }
     
 ]

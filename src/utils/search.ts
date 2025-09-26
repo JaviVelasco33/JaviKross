@@ -1,4 +1,4 @@
-import removeAccents from 'remove-accents';
+import removeAccents from "remove-accents";
 
 export interface Video {
     id: number;

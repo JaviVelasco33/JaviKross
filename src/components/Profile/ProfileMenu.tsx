@@ -1,6 +1,6 @@
-import { useState, useRef, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
-import '@/styles/components/Profile/_ProfileMenu.scss';
+import { useState, useRef, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import "@/styles/components/Profile/_ProfileMenu.scss";
 
 export function ProfileMenu() {
     const [open, setOpen] = useState(false);
@@ -12,13 +12,13 @@ export function ProfileMenu() {
     };
 
     const handleLogout = () => {
-        console.log('Logging out...');
-        navigate('/login');
+        console.log("Logging out...");
+        navigate("/login");
         
     };
 
     const handleEditProfile = () => {
-        navigate('/profile');
+        navigate("/profile");
     };
 
     useEffect(() => {
@@ -28,8 +28,8 @@ export function ProfileMenu() {
             }
         };
 
-        document.addEventListener('click', handleClickOutside);
-        return () => document.removeEventListener('click', handleClickOutside);
+        document.addEventListener("click", handleClickOutside);
+        return () => document.removeEventListener("click", handleClickOutside);
     }, [open]);
     
     return (

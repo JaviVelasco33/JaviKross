@@ -1,5 +1,5 @@
-import { useState, useRef, useEffect } from 'react';
-import '@/styles/components/Bars/_SearchBar.scss';
+import { useState, useRef, useEffect } from "react";
+import "@/styles/components/Bars/_SearchBar.scss";
 
 interface SearchBarProps {
     onSearch: (query: string) => void
@@ -7,14 +7,14 @@ interface SearchBarProps {
 
 export function SearchBar({ onSearch }: SearchBarProps) {
     const [isOpen, setIsOpen] = useState(false);
-    const [value, setValue] = useState('');
+    const [value, setValue] = useState("");
     const inputRef = useRef<HTMLInputElement>(null);
     const iconRef = useRef<HTMLButtonElement>(null);
 
     // Toggle at click on icon
     const toggleSearch = () => {
         // If it's open and empty, close it
-        if (isOpen && value === '') {
+        if (isOpen && value === "") {
             setIsOpen(false);
         } else {
             setIsOpen(true);
@@ -29,7 +29,7 @@ export function SearchBar({ onSearch }: SearchBarProps) {
         const handleClickOutside = (event: MouseEvent) => {
             if (
                 isOpen &&
-                value === '' &&
+                value === "" &&
                 inputRef.current &&
                 !inputRef.current.contains(event.target as Node) &&
                 iconRef.current &&
@@ -39,8 +39,8 @@ export function SearchBar({ onSearch }: SearchBarProps) {
             }
         };
 
-        document.addEventListener('click', handleClickOutside);
-        return () => document.removeEventListener('click', handleClickOutside);
+        document.addEventListener("click", handleClickOutside);
+        return () => document.removeEventListener("click", handleClickOutside);
         }, [isOpen, value]);
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -57,7 +57,7 @@ export function SearchBar({ onSearch }: SearchBarProps) {
                 placeholder="Buscar..."
                 value={value}
                 onChange={handleChange}
-                className={`search-input ${isOpen ? 'open' : ''}`}
+                className={`search-input ${isOpen ? "open" : ""}`}
             />
             <button ref={iconRef} className="search-icon" onClick={toggleSearch}>
                 🔍

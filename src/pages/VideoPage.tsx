@@ -1,12 +1,21 @@
-import { useParams } from 'react-router-dom';
+import { useParams } from "react-router-dom";
+import videosData from "@/data/videos.json";
+import type { Video } from "@/utils/search";
+import VideoPlayer from "@/components/Videos/VideoPlayer";
+import VideoLikes from "@/components/Videos/VideoLikes";
 
 function VideoPage() {
-    const { id } = useParams();
+    const { id } = useParams<{ id: string }>();
+    const video = videosData.find((v: Video) => v.id === Number(id));
+
+    if (!video) {
+        return <div>Video not found</div>;
+    }
 
     return (
-        <div style={{ color: 'white', padding: '20px' }}>
-            <h1>Video {id}</h1>
-            {/* Aquí luego irá el reproductor */}
+        <div style={{ color: "white", padding: "20px" }}>
+            <VideoPlayer title={video.title} videoFile={video.videoFile} />
+            <VideoLikes videoId={video.id} />
         </div>
     );
 }

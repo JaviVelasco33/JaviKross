@@ -1,6 +1,6 @@
-import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import '@/styles/components/Videos/_VideoCard.scss';
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import "@/styles/components/Videos/_VideoCard.scss";
 
 interface VideoProps {
     id: number;
@@ -16,11 +16,11 @@ export default function VideoCard({ id, title,  thumbnail, poster }: VideoProps)
     const navigate = useNavigate();
 
     const handleClick = () => {
-        navigate(`/videos/${id}`);
+        navigate(`/video/${id}`);
     };
     
     return (
-        <div className={`video-card ${isHovered ? 'hovered' : ''}`}
+        <div className={`video-card ${isHovered ? "hovered" : ""}`}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
         onClick={handleClick}
