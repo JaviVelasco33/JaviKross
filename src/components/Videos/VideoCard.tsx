@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import '../../styles/components/Videos/_VideoCard.scss';
+import '@/styles/components/Videos/_VideoCard.scss';
 
 interface VideoProps {
     id: number;
