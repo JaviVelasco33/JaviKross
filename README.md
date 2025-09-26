@@ -6,7 +6,7 @@ El contenido está restringido: solo los usuarios autorizados podrán acceder a 
 ___________________________________________________________________________________________________________________________________________
 
 ## 🚀 Tecnologías utilizadas
-<p align="left"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" width="50" height="50"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" width="50" height="50"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="Sass" width="50" height="50"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vite/vite-original.svg" alt="Vite" width="50" height="50"/> </p>
+<p align="left"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" width="50" height="50"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" width="50" height="50"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="Sass" width="50" height="50"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg" alt="Vite" width="50" height="50"/> </p>
 
 React → librería principal para la construcción de la interfaz.
 
@@ -48,16 +48,18 @@ yarn dev
 ___________________________________________________________________________________________________________________________________________
 
 ## 📁 Estructura del proyecto
-- src/
-- ├─ assets/         # recursos globales (logos, iconos pequeños, etc.)
-- ├─ components/     # componentes reutilizables (Header, SearchBar, ProfileMenu, etc.)
-- ├─ data/           # JSON con los vídeos y metadatos
-- ├─ pages/          # páginas principales (HomePage, LoginPage, ProfilePage, VideoPage)
-- ├─ styles/         # estilos SCSS globales y por componente
-- ├─ utils/          # funciones auxiliares (búsqueda, normalización, etc.)
-- public/
-- ├─ images/         # miniaturas y pósters (privados, no incluidos en el repo)
-- ├─ videos/         # vídeos (privados, no incluidos en el repo)
+```
+src/
+├─ assets/         # recursos globales (logos, iconos pequeños, etc.)
+├─ components/     # componentes reutilizables (Header, SearchBar, ProfileMenu, etc.)
+├─ data/           # JSON con los vídeos y metadatos
+├─ pages/          # páginas principales (HomePage, LoginPage, ProfilePage, VideoPage)
+├─ styles/         # estilos SCSS globales y por componente
+├─ utils/          # funciones auxiliares (búsqueda, normalización, etc.)
+public/
+├─ images/         # miniaturas y pósters (privados, no incluidos en el repo)
+├─ videos/         # vídeos (privados, no incluidos en el repo)
+```
 
 ___________________________________________________________________________________________________________________________________________
 
