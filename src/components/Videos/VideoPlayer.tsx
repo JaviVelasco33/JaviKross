@@ -1,4 +1,5 @@
 import React from "react";
+import "@/styles/components/Videos/_VideoPlayer.scss";
 
 interface VideoPlayerProps {
     title: string
@@ -6,13 +7,15 @@ interface VideoPlayerProps {
 }
 
 const VideoPlayer: React.FC<VideoPlayerProps> = ({ title, videoFile }) => {
+    console.log(videoFile);
     return (
         <div className="video-player">
             <video
                 src={videoFile}
                 controls
-                style={{ maxWidth: "100%", borderRadius: "8px" }}
+                width={"640"}
             />
+            
             <h1>{title}</h1>
         </div>
     );

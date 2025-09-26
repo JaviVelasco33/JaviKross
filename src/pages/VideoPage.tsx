@@ -11,13 +11,15 @@ function VideoPage() {
     if (!video) {
         return <div>Video not found</div>;
     }
-
+    
+    console.log(video.videoFile);
     return (
         <div style={{ color: "white", padding: "20px" }}>
             <VideoPlayer title={video.title} videoFile={video.videoFile} />
             <VideoLikes videoId={video.id} />
         </div>
     );
+
 }
 
 export default VideoPage;

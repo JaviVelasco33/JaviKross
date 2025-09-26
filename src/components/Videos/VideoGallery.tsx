@@ -26,9 +26,9 @@ export function VideoGallery({ videos, query }: VideoGalleryProps) {
     return (
         <div className='gallery' style={{ display: "flex", flexWrap: "wrap", padding: "20px" }}>
             {sortedYears.map((year) => (
-                <div key={year} style={{ margin: "10px", padding: "10px", width: "100%" }}>
+                <div className="videos-total" key={year} style={{ margin: "10px", padding: "10px", width: "100%" }}>
                     <h2>{year}</h2>
-                    <div style={{ display: "flex", gap: "15px" }}>
+                    <div className="videos-group" style={{ display: "flex", gap: "15px" }}>
                         {videosByYear[year]
                             .sort((a, b) => a.prio - b.prio)
                             .map((video) => (
