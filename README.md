@@ -1,69 +1,88 @@
-# React + TypeScript + Vite
+🎉 JaviKross – Private Party Web
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenido al repositorio de JaviKross, un sitio web privado inspirado en el estilo de plataformas de streaming como Netflix o Youtube, pero diseñado exclusivamente para una fiesta privada.
+El contenido está restringido: solo los usuarios autorizados podrán acceder a los vídeos y material exclusivo.
 
-Currently, two official plugins are available:
+___________________________________________________________________________________________________________________________________________
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🚀 Tecnologías utilizadas
+<p align="left"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" width="50" height="50"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" width="50" height="50"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="Sass" width="50" height="50"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vite/vite-original.svg" alt="Vite" width="50" height="50"/> </p>
 
-## Expanding the ESLint configuration
+React → librería principal para la construcción de la interfaz.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+TypeScript → tipado estático para mayor seguridad y mantenibilidad.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+SCSS (Sass) → estilos modulares y escalables.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Vite → entorno de desarrollo rápido y optimizado.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+___________________________________________________________________________________________________________________________________________
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+📦 Instalación y uso
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Clona este repositorio en tu máquina local:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+git clone https://github.com/tu-usuario/javikross.git
+cd javikross
+
+Usando pnpm (recomendado)
+pnpm install
+pnpm run dev
+
+Usando npm
+npm install
+npm run dev
+
+Usando yarn
+yarn install
+yarn dev
+
+___________________________________________________________________________________________________________________________________________
+
+📁 Estructura del proyecto
+src/
+ ├─ assets/         # recursos globales (logos, iconos pequeños, etc.)
+ ├─ components/     # componentes reutilizables (Header, SearchBar, ProfileMenu, etc.)
+ ├─ data/           # JSON con los vídeos y metadatos
+ ├─ pages/          # páginas principales (HomePage, LoginPage, ProfilePage, VideoPage)
+ ├─ styles/         # estilos SCSS globales y por componente
+ ├─ utils/          # funciones auxiliares (búsqueda, normalización, etc.)
+public/
+ ├─ images/         # miniaturas y pósters (privados, no incluidos en el repo)
+ ├─ videos/         # vídeos (privados, no incluidos en el repo)
+
+___________________________________________________________________________________________________________________________________________
+
+🔐 Privacidad del contenido
+
+⚠️ Por motivos de privacidad, las imágenes y vídeos no están incluidos en este repositorio.
+Solo se distribuye el código fuente de la aplicación.
+
+___________________________________________________________________________________________________________________________________________
+
+En un futuro se añadirá el enlace a la web desplegada.
+
+🛠️ Estado del proyecto
+
+✅ Configuración inicial con React + Vite + TypeScript + SCSS
+
+✅ Estructura de carpetas y componentes base
+
+✅ Header con logo, búsqueda y menú de perfil
+
+✅ Sistema de rutas (login, home, editar perfil, vídeos)
+
+🔲 Galería de vídeos con miniaturas dinámicas
+
+🔲 Reproductor de vídeo en página dedicada
+
+🔲 Autenticación básica de usuarios
+
+🔲 Deploy público (enlace pendiente)
+
+___________________________________________________________________________________________________________________________________________
+
+⚖️ Licencia
+
+Este proyecto es privado y no tiene licencia de uso público.
+El código se publica únicamente con fines de portafolio y demostración.
