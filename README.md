@@ -1,11 +1,11 @@
-🎉 JaviKross – Private Party Web
+# 🎉 JaviKross – Private Party Web
 
 Bienvenido al repositorio de JaviKross, un sitio web privado inspirado en el estilo de plataformas de streaming como Netflix o Youtube, pero diseñado exclusivamente para una fiesta privada.
 El contenido está restringido: solo los usuarios autorizados podrán acceder a los vídeos y material exclusivo.
 
 ___________________________________________________________________________________________________________________________________________
 
-🚀 Tecnologías utilizadas
+## 🚀 Tecnologías utilizadas
 <p align="left"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" width="50" height="50"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" width="50" height="50"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="Sass" width="50" height="50"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vite/vite-original.svg" alt="Vite" width="50" height="50"/> </p>
 
 React → librería principal para la construcción de la interfaz.
@@ -18,7 +18,7 @@ Vite → entorno de desarrollo rápido y optimizado.
 
 ___________________________________________________________________________________________________________________________________________
 
-📦 Instalación y uso
+## 📦 Instalación y uso
 
 Clona este repositorio en tu máquina local:
 
@@ -39,7 +39,7 @@ yarn dev
 
 ___________________________________________________________________________________________________________________________________________
 
-📁 Estructura del proyecto
+## 📁 Estructura del proyecto
 src/
  ├─ assets/         # recursos globales (logos, iconos pequeños, etc.)
  ├─ components/     # componentes reutilizables (Header, SearchBar, ProfileMenu, etc.)
@@ -53,16 +53,16 @@ public/
 
 ___________________________________________________________________________________________________________________________________________
 
-🔐 Privacidad del contenido
+## 🔐 Privacidad del contenido
 
 ⚠️ Por motivos de privacidad, las imágenes y vídeos no están incluidos en este repositorio.
 Solo se distribuye el código fuente de la aplicación.
 
-___________________________________________________________________________________________________________________________________________
-
 En un futuro se añadirá el enlace a la web desplegada.
 
-🛠️ Estado del proyecto
+___________________________________________________________________________________________________________________________________________
+
+## 🛠️ Estado del proyecto
 
 ✅ Configuración inicial con React + Vite + TypeScript + SCSS
 
@@ -82,7 +82,7 @@ En un futuro se añadirá el enlace a la web desplegada.
 
 ___________________________________________________________________________________________________________________________________________
 
-⚖️ Licencia
+## ⚖️ Licencia
 
 Este proyecto es privado y no tiene licencia de uso público.
 El código se publica únicamente con fines de portafolio y demostración.
