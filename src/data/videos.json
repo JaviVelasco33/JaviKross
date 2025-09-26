@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "title": "Aftermovie JaviKross 2021",
+        "year": 2021,
+        "prio": 1,
+        "tags": ["resacón", "almáchar", "primer año", "right round", "créditos", "pursuit of happiness", "2021"],
+        "thumbnail": "/images/thumbs/MiniaturaJavikross2021.png",
+        "poster": "/images/posters/Poster2021.png"
+    },
+    {
+        "id": 2,
+        "title": "Presentacion JaviKross 2023",
+        "year": 2023,
+        "prio": 3,
+        "tags": ["presentación", "cantantes", "almáchar", "2023"],
+        "thumbnail": "/images/thumbs/Mini_Horizontal_Presen_2023.png",
+        "poster": "/images/posters/Mini_Vertical_Presen_2023.png"
+    },
+    {
+        "id": 3,
+        "title": "Entrevistas JaviKross 2023",
+        "year": 2023,
+        "prio": 2,
+        "tags": ["entrevistas", "cantantes", "almáchar", "2023"],
+        "thumbnail": "/images/thumbs/Mini_Horizontal_Entrevistas_2023.png",
+        "poster": "/images/posters/Mini_Vertical_Entrevistas_2023.png"
+    },
+        {
+        "id": 4,
+        "title": "Aftermovie JaviKross 2023",
+        "year": 2023,
+        "prio": 1,
+        "tags": ["aftermovie", "cantantes", "almáchar", "where them girls at", "2023"],
+        "thumbnail": "/images/thumbs/MiniaturaJavikross2023.png",
+        "poster": "/images/posters/Poster2023.png"
+    },
+        {
+        "id": 5,
+        "title": "Presentacion JaviKross 2024",
+        "year": 2024,
+        "prio": 3,
+        "tags": ["presentación", "pirámide", "peliculas", "casa cristian", "2024"],
+        "thumbnail": "/images/thumbs/Mini_Horizontal_Presen_2024.png",
+        "poster": "/images/posters/Mini_Vertical_Presen_2024.png"
+    },
+        {
+        "id": 6,
+        "title": "Tomas falsas 2024",
+        "year": 2024,
+        "prio": 2,
+        "tags": ["tomas falsas", "peliculas", "casa cristian", "2024"],
+        "thumbnail": "/images/thumbs/Mini_Horizontal_TFalsas_2024.png",
+        "poster": "/images/posters/Mini_Vertical_TFalsas_2024.png"
+    },
+        {
+        "id": 7,
+        "title": "Aftermovie JaviKross 2024",
+        "year": 2024,
+        "prio": 1,
+        "tags": ["aftermovie", "peliculas", "trabuco", "regreso al futuro", "club cant handle me", "hot", "2024"],
+        "thumbnail": "/images/thumbs/MiniaturaJavikross2024.png",
+        "poster": "/images/posters/Poster2024.png"
+    }
+    
+]
