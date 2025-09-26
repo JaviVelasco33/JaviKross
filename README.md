@@ -23,7 +23,7 @@ ________________________________________________________________________________
 Clona este repositorio en tu máquina local:
 
 ```
-git clone https://github.com/tu-usuario/javikross.git
+git clone https://github.com/JaviVelasco33/javikross.git
 cd javikross
 ```
 
