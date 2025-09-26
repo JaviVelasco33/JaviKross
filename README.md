@@ -23,8 +23,8 @@ ________________________________________________________________________________
 Clona este repositorio en tu máquina local:
 
 ```
-: git clone https://github.com/tu-usuario/javikross.git
-: cd javikross
+git clone https://github.com/tu-usuario/javikross.git
+cd javikross
 ```
 
 #### Usando pnpm (recomendado)
