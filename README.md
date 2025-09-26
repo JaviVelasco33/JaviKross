@@ -22,20 +22,28 @@ ________________________________________________________________________________
 
 Clona este repositorio en tu máquina local:
 
-git clone https://github.com/tu-usuario/javikross.git
-cd javikross
+```
+: git clone https://github.com/tu-usuario/javikross.git
+: cd javikross
+```
 
-Usando pnpm (recomendado)
+#### Usando pnpm (recomendado)
+```
 pnpm install
 pnpm run dev
+```
 
-Usando npm
+#### Usando npm
+```
 npm install
 npm run dev
+```
 
-Usando yarn
+#### Usando yarn
+```
 yarn install
 yarn dev
+```
 
 ___________________________________________________________________________________________________________________________________________
 
