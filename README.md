@@ -40,16 +40,16 @@ yarn dev
 ___________________________________________________________________________________________________________________________________________
 
 ## 📁 Estructura del proyecto
-src/
- ├─ assets/         # recursos globales (logos, iconos pequeños, etc.)
- ├─ components/     # componentes reutilizables (Header, SearchBar, ProfileMenu, etc.)
- ├─ data/           # JSON con los vídeos y metadatos
- ├─ pages/          # páginas principales (HomePage, LoginPage, ProfilePage, VideoPage)
- ├─ styles/         # estilos SCSS globales y por componente
- ├─ utils/          # funciones auxiliares (búsqueda, normalización, etc.)
-public/
- ├─ images/         # miniaturas y pósters (privados, no incluidos en el repo)
- ├─ videos/         # vídeos (privados, no incluidos en el repo)
+- src/
+- ├─ assets/         # recursos globales (logos, iconos pequeños, etc.)
+- ├─ components/     # componentes reutilizables (Header, SearchBar, ProfileMenu, etc.)
+- ├─ data/           # JSON con los vídeos y metadatos
+- ├─ pages/          # páginas principales (HomePage, LoginPage, ProfilePage, VideoPage)
+- ├─ styles/         # estilos SCSS globales y por componente
+- ├─ utils/          # funciones auxiliares (búsqueda, normalización, etc.)
+- public/
+- ├─ images/         # miniaturas y pósters (privados, no incluidos en el repo)
+- ├─ videos/         # vídeos (privados, no incluidos en el repo)
 
 ___________________________________________________________________________________________________________________________________________
 
