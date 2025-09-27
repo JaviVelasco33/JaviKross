@@ -1,8 +1,8 @@
-import { useEffect, useState } from "react";
+import { Header } from "@/components/Header/Header";
 import { VideoGallery } from "@/components/Videos/VideoGallery";
 import videosData from "@/data/videos.json";
 import type { Video } from "@/utils/search";
-import { Header } from "@/components/Header";
+import { useEffect, useState } from "react";
 
 
 function HomePage() {

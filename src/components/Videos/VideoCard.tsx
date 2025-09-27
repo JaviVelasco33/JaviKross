@@ -25,10 +25,11 @@ export default function VideoCard({ id, title,  thumbnail, poster }: VideoProps)
         onMouseLeave={() => setIsHovered(false)}
         onClick={handleClick}
         >
-            <img 
-            src={isHovered ? thumbnail : poster} 
-            alt={title} 
-            className={`thumbnail ${isHovered ? "hovered" : ""}`} />
+            {/* Poster image */}
+            <img src={poster} alt={title} className="poster" />
+
+            {/* Thumbnail image */}
+            <img src={thumbnail} alt={title} className="thumbnail" />
             <div className="video-info">
                 <h4>{title}</h4>
             </div>

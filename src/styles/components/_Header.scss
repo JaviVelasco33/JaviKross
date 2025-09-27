@@ -1,17 +1,33 @@
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #111;
-    padding: 10px 20px;
+@use '../global' as *;
+
+// Mobile first
+
+
+// Tablet
+@include respond-to(tablet) {
+
 }
 
-.header-actions {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+// Desktop
+@include respond-to(desktop) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #111;
+        padding: 10px 20px;
+
+        .header-logo {
+            display: flex;
+            align-items: center;
+            margin: 0 1rem;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+    }
 }
 
-.logoContainer img {
-    width: 150px;
-}

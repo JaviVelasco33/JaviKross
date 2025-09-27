@@ -1,30 +1,45 @@
-.video-likes {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+@use '../../global' as *;
 
-    button {
-        background: none;
-        border: 1px solid #444;
-        border-radius: 6px;
-        padding: 5px 10px;
-        color: white;
-        cursor: pointer;
-        transition: all 0.2s ease;
+// Mobile first
 
-        &.active {
-            background-color: wheat;
-            border-color: wheat;
+
+// Tablet
+@include respond-to(tablet) {
+
+}
+
+// Desktop
+@include respond-to(desktop) {
+    .video-likes {
+        width: 65%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+
+        button {
+            background: none;
+            border: 1px solid #444;
+            border-radius: 6px;
+            padding: 5px 10px;
+            color: white;
+            cursor: pointer;
+            transition: all 0.2s ease;
+
+            &.active {
+                background-color: wheat;
+                border-color: wheat;
+            }
+
+            &:hover {
+                transform: scale(1.05);
+            }
         }
 
-        &:hover {
-            transform: scale(1.05);
+        span {
+            margin-left: 10px;
+            font-size: 14px;
+            color: #ccc;
         }
-    }
-
-    span {
-        margin-left: 10px;
-        font-size: 14px;
-        color: #ccc;
     }
 }

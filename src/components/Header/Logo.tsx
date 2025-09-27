@@ -1,6 +1,6 @@
 export function Logo() {
     return (
-        <div className="logoContainer">
+        <div>
             <img
                 src="/src/assets/images/logos/LogoJaviKross.png"
                 alt="Logo JaviKross"

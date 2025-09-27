@@ -1,0 +1,14 @@
+@use '../../global' as *;
+
+// Mobile first
+
+
+// Tablet
+@include respond-to(tablet) {
+
+}
+
+// Desktop
+@include respond-to(desktop) {
+
+}

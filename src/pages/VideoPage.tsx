@@ -3,6 +3,7 @@ import videosData from "@/data/videos.json";
 import type { Video } from "@/utils/search";
 import VideoPlayer from "@/components/Videos/VideoPlayer";
 import VideoLikes from "@/components/Videos/VideoLikes";
+import "@/styles/Pages/_VideoPage.scss";
 
 function VideoPage() {
     const { id } = useParams<{ id: string }>();
@@ -12,9 +13,9 @@ function VideoPage() {
         return <div>Video not found</div>;
     }
     
-    console.log(video.videoFile);
+    console.log(video.videoFile); 
     return (
-        <div style={{ color: "white", padding: "20px" }}>
+        <div className="videoPage-container">
             <VideoPlayer title={video.title} videoFile={video.videoFile} />
             <VideoLikes videoId={video.id} />
         </div>

@@ -1,7 +1,7 @@
-import { Logo } from "./Logo";
-import { SearchBar } from "./Bars/SearchBar";
-import { ProfileMenu } from "./Profile/ProfileMenu";
 import "@/styles/components/_Header.scss";
+import { SearchBar } from "../Bars/SearchBar";
+import { Logo } from "./Logo";
+import { ProfileMenu } from "../Profile/ProfileMenu";
 
 interface HeaderProps {
     onSearch: (query: string) => void
@@ -10,7 +10,9 @@ interface HeaderProps {
 export function Header({ onSearch }: HeaderProps) {
     return (
         <header className="header">
-            <Logo />
+            <div className="header-logo">
+                <Logo />
+            </div>
             <div className="header-actions">
                 <SearchBar onSearch={onSearch} />
                 <ProfileMenu />

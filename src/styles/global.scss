@@ -1,6 +1,12 @@
-/* Estilos globales básicos */
+// Export files to be used in other files
+@forward './mixins';
+@forward './variables';
+
+// Import files to be used here
+@use './variables' as *;
+
 body {
     margin: 0;
     font-family: sans-serif;
-    background-color: #111;
+    background-color: $background-color;
 }

@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import LoginPictures from "../components/Login/LoginPictures";
 
 function LoginPage() {
     const navigate = useNavigate();
@@ -10,6 +11,7 @@ function LoginPage() {
 
     return (
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", marginTop: "50px" }}>
+            <LoginPictures />
             <h1>Login Page</h1>
             <button onClick={handleEnter} style={{ marginTop: "20px", padding: "10px 20px" }}>
                 Entrar

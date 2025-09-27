@@ -1,37 +1,72 @@
-.video-card {
-    position: relative;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    padding: 0 1rem;
-    justify-content: space-between;
+@use '../../global' as *;
 
-    .thumbnail {
-        height: 300px;
-        width: auto;
-        object-fit: cover;
-        border-radius: 8px;
-        transition: all 0.3s ease;
+// Mobile first
 
-        &.hovered {
-            width: 100%;
-            z-index: 2;
+
+// Tablet
+@include respond-to(tablet) {
+
+}
+
+// Desktop
+@include respond-to(desktop) {
+    .video-card {
+        position: relative;
+        cursor: pointer;
+        padding: 0 1rem;
+        // transition: all 0.3s ease;
+
+        .poster {
+            display: inline-block;
+            height: 300px;
+            width: auto;
+            object-fit: cover;
         }
-    }
 
-    .video-info {
-        padding: 0 0.2rem;
-        font-size: 1rem;
-        color: white;
-        opacity: 0;
-        transition: opacity 0.3s ease;
-    }
-
-    &:hover {
-        z-index: 5;
-        transform: scale(1.05);
+        .thumbnail {
+            display: none;
+            height: 300px;
+            width: auto;
+            object-fit: cover;
+            border-radius: 8px;
+        }
 
         .video-info {
-            opacity: 1;
+            padding: 0 0.3rem;
+            font-size: 0.7rem;
+            color: white;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+
+            &:hover {
+                opacity: 1;
+                font-size: 1rem;
+            }
+        }
+
+        &.hovered {
+            z-index: 5;
+            transform: scale(1.1);
+            transition: all 0.5s ease;
+
+            .poster {
+                display: none;
+                opacity: 0;
+                transition: opacity 0.3s ease;
+                border-radius: 8px;
+            }
+
+            .thumbnail {
+                display: inline-block;
+                opacity: 1;
+                transition: opacity 0.3s ease;
+                border-radius: 8px;
+            }
+
+            .video-info {
+                opacity: 1;
+                font-size: 1rem;
+            }
         }
     }
 }

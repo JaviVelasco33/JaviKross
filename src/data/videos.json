@@ -4,7 +4,7 @@
         "title": "Aftermovie JaviKross 2021",
         "year": 2021,
         "prio": 1,
-        "tags": ["resacón", "almáchar", "primer año", "right round", "créditos", "pursuit of happiness", "2021"],
+        "tags": ["aftermovie", "resacón", "almáchar", "primer año", "right round", "créditos", "pursuit of happiness", "2021"],
         "thumbnail": "/images/thumbs/MiniaturaJavikross2021.png",
         "poster": "/images/posters/Poster2021.png",
         "videoFile": "/videos/video.mp4"
@@ -14,7 +14,7 @@
         "title": "Presentacion JaviKross 2023",
         "year": 2023,
         "prio": 3,
-        "tags": ["presentación", "cantantes", "almáchar", "2023"],
+        "tags": ["presentación", "cantantes", "mapa", "2023"],
         "thumbnail": "/images/thumbs/Mini_Horizontal_Presen_2023.png",
         "poster": "/images/posters/Mini_Vertical_Presen_2023.png",
         "videoFile": "/videos/video.mp4"
@@ -64,7 +64,7 @@
         "title": "Aftermovie JaviKross 2024",
         "year": 2024,
         "prio": 1,
-        "tags": ["aftermovie", "peliculas", "trabuco", "regreso al futuro", "club cant handle me", "hot", "2024"],
+        "tags": ["aftermovie", "peliculas", "trabuco", "regreso al futuro", "club cant handle me", "hot", "pitbull", "2024"],
         "thumbnail": "/images/thumbs/MiniaturaJavikross2024.png",
         "poster": "/images/posters/Poster2024.png",
         "videoFile": "/videos/video.mp4"
