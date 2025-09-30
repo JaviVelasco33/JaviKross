@@ -15,7 +15,7 @@ function HomePage() {
     }, []);
 
     return (
-        <div id='home-page' style={{ backgroundColor: "#0f0f0f", color: "white", padding: "20px" }}>
+        <div>
             <Header onSearch={setQuery} />
             <VideoGallery videos={videos} query={query} />
 
