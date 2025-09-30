@@ -3,6 +3,7 @@ import { VideoGallery } from "@/components/Videos/VideoGallery";
 import videosData from "@/data/videos.json";
 import type { Video } from "@/utils/search";
 import { useEffect, useState } from "react";
+import "@/styles/Pages/_HomePage.scss";
 
 
 function HomePage() {
@@ -15,7 +16,7 @@ function HomePage() {
     }, []);
 
     return (
-        <div>
+        <div className="home-page">
             <Header onSearch={setQuery} />
             <VideoGallery videos={videos} query={query} />
 
