@@ -1,6 +1,6 @@
 import "@/styles/components/_Header.scss";
 import { SearchBar } from "../Bars/SearchBar";
-import { Logo } from "./Logo";
+import { Logo } from "../Logo";
 import { ProfileMenu } from "../Profile/ProfileMenu";
 
 interface HeaderProps {

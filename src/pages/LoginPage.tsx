@@ -1,7 +1,8 @@
-import { useNavigate } from "react-router-dom";
-import LoginForm from "../components/Login/LoginForm";
-import LoginBG from "../components/Login/LoginBG";
 import "@/styles/Pages/_LoginPage.scss";
+import { useNavigate } from "react-router-dom";
+import LoginBG from "../components/Login/LoginBG";
+import LoginForm from "../components/Login/LoginForm";
+import { Logo } from "../components/Logo";
 
 function LoginPage() {
     const navigate = useNavigate();
@@ -16,9 +17,9 @@ function LoginPage() {
             <LoginBG />
 
             <div className="login-content">
-                <h1>Login Page</h1>
+                <Logo />
                 <LoginForm />
-                <button className="login-button" onClick={handleEnter} style={{ marginTop: "20px", padding: "10px 20px" }}>
+                <button className="login-button" onClick={handleEnter}>
                     Entrar
                 </button>
             </div>

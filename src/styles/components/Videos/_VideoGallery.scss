@@ -12,6 +12,9 @@
 @include respond-to(desktop) {
     .gallery {
         gap: 3rem;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 2rem;
 
         .videos-total {
             display: flex;

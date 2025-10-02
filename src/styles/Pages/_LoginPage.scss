@@ -1,3 +1,5 @@
+@use "sass:color";
+
 .login-page {
     position: relative;
     height: 100vh;
@@ -6,31 +8,65 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    .login-content {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+        background-color: rgba(255, 255, 255, 1);
+        padding: 2rem;
+        border-radius: 10px;
+        text-align: center;
+        width: 20rem;
+        height: 20rem;
+        gap: 1rem;
+        box-shadow: 10px 0px 20px rgb(255, 150, 0),
+            -10px 0px 20px rgb(0, 150, 255);
+        animation: neonMove 5s linear infinite;
+
+        .login-button {
+            margin-top: 1rem;
+            padding: 0.75rem;
+            width: 75%;
+            border-color: black;
+            border-radius: 10px;
+            color: black;
+            background: color.scale(white, $lightness: -30%);
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+
+            &:hover {
+                background: color.scale(white, $lightness: -50%);
+            }
+        }
+    }
 }
 
-.login-content {
-    position: absolute;
-    z-index: 1;
-    background-color: white;
-    padding: 2rem;
-    border-radius: 8px;
-    text-align: center;
-    width: 320px;
-}
 
-.login-button {
-    margin-top: 1rem;
-    padding: 0.75rem;
-    width: 90%;
-    border-color: black;
-    border-radius: 10px;
-    color: black;
-    background: darken(white, 20%);
-    font-size: 16px;
-    cursor: pointer;
-    transition: background 0.2s ease;
-
-    &:hover {
-        background: darken(white, 40%);
+// Animation
+@keyframes neonMove {
+    0% {
+        box-shadow: 10px 0px 20px rgb(255, 150, 0),
+            -10px 0px 20px rgb(0, 150, 255);
+    }
+    25% {
+        box-shadow: 0px 10px 20px rgb(255, 150, 0),
+            0px -10px 20px rgb(0, 150, 255);
+    }
+    50% {
+        box-shadow: -10px 0px 20px rgb(255, 150, 0),
+            10px 0px 20px rgb(0, 150, 255);
+    }
+    75% {
+        box-shadow: 0px -10px 20px rgb(255, 150, 0),
+            0px 10px 20px rgb(0, 150, 255);
+    }
+    100% {
+        box-shadow: 10px 0px 20px rgb(255, 150, 0),
+            -10px 0px 20px rgb(0, 150, 255);
     }
 }
