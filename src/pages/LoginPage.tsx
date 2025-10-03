@@ -17,12 +17,16 @@ function LoginPage() {
             <LoginBG />
 
             <div className="login-content">
-                <Logo />
-                <LoginForm />
-                <button className="login-button" onClick={handleEnter}>
-                    Entrar
-                </button>
+                    <Logo />
+                    <LoginForm />
+                    <button className="login-button" onClick={handleEnter}>
+                        Entrar
+                    </button>
             </div>
+            <div className="neon-bg">
+                <div className="neon-border"></div>
+            </div>
+            
 
         </div>
     );
