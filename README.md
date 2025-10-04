@@ -82,9 +82,11 @@ ________________________________________________________________________________
 
 ✅ Sistema de rutas (login, home, editar perfil, vídeos)
 
-🔲 Galería de vídeos con miniaturas dinámicas
+✅ Galería de vídeos con miniaturas dinámicas
 
-🔲 Reproductor de vídeo en página dedicada
+✅ Reproductor de vídeo en página dedicada
+
+🔲 Estilos de la web
 
 🔲 Autenticación básica de usuarios
 
