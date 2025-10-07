@@ -1,0 +1,44 @@
+@use '../../global' as *;
+@use "sass:color";
+
+// Mobile first
+
+// Tablet
+@include respond-to(tablet) {
+
+}
+
+// Desktop
+@include respond-to(desktop) {
+    // Login Button
+        .login-button {
+        margin-top: 1rem;
+        padding: 0.75rem;
+        width: 50%;
+        border: none;
+        border-radius: 20px;
+        box-shadow: inset -1px -1px 5px rgba(255, 255, 255, 0.3),
+            -2px -2px 3px rgba(0, 0, 0, 0.2);
+        color: $dark-color;
+        background: rgba($details-color, 0.2);
+        font-size: 1rem;
+        cursor: pointer;
+        transform: scale(0.9);
+        transition: all 0.3s ease;
+        z-index: 2;
+
+        &:hover {
+            background: color.scale($details-color, $lightness: 25%);
+            transform: scale(1.1);
+            width: 80%;
+            font-weight: bold;
+            text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.1),
+                1px -1px 0px rgba(0, 0, 0, 0.1), -1px 1px 0px rgba(0, 0, 0, 0.1),
+                1px 1px 0px rgba(0, 0, 0, 0.1);
+            color: $primary-color;
+            border: none;
+            box-shadow: -2px 5px 10px rgba(0, 0, 0, 0.5), inset -3px 3px 5px rgba(255, 255, 255, 0.5), inset 3px -3px 5px rgba(0, 0, 0, 0.2);
+        }
+    }
+
+}
