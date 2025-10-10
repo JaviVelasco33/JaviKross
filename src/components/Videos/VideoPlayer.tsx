@@ -9,8 +9,9 @@ interface VideoPlayerProps {
 const VideoPlayer: React.FC<VideoPlayerProps> = ({ title, videoFile }) => {
     console.log(videoFile);
     return (
-        <div className="video-player">
+        <div className="videoPlayer-container">
             <video
+                className="video-player"
                 src={videoFile}
                 controls
                 width={"640"}

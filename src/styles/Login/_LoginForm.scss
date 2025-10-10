@@ -1,66 +1,77 @@
 @use "../global" as *;
 @use "sass:color";
 
-.login-form-div {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    z-index: 2;
-    gap: 1rem;
+// Mobile first
 
-    .login-form {
+
+// Tablet
+@include respond-to(tablet) {
+
+}
+
+// Desktop
+@include respond-to(desktop) {
+    .login-form-div {
+        position: relative;
         display: flex;
         flex-direction: column;
-        gap: 1.5rem;
+        align-items: center;
+        justify-content: center;
         z-index: 2;
+        gap: 1rem;
 
-        .form-group {
-            position: relative;
+        .login-form {
             display: flex;
             flex-direction: column;
-            align-items: start;
+            gap: 1.5rem;
+            z-index: 2;
 
-            label {
-                position: absolute;
-                color: rgba(128, 128, 128, 0.616);
-                margin: 0.2rem 1rem;
-                font-size: 1rem;
-                transform: translateY(0.7rem);
-                transition: all 0.3s ease;
-                pointer-events: none;
-            }
+            .form-group {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
 
-            input {
-                padding: 0.7rem 1rem;
-                border-radius: 20px;
-                border-color: rgba($details-color, 0.5);
-                background: transparent;
-                outline: none;
-                font-size: 1rem;
-
-                &::placeholder {
-                    font-size: 0.8rem;
-                    opacity: 0;
+                label {
+                    position: absolute;
+                    color: rgba(128, 128, 128, 0.616);
+                    margin: 0.2rem 1rem;
+                    font-size: 1rem;
+                    transform: translateY(0.7rem);
+                    transition: all 0.3s ease;
+                    pointer-events: none;
                 }
 
-                &:focus,
-                &:not(:placeholder-shown) {
-                    border: 2px solid $details-color;
+                input {
+                    padding: 0.7rem 1rem;
+                    border-radius: 20px;
+                    border-color: rgba($details-color, 0.5);
+                    background: transparent;
+                    outline: none;
+                    font-size: 1rem;
 
-                    & + label {
-                        transform: translateY(-0.8rem);
+                    &::placeholder {
                         font-size: 0.8rem;
-                        background-color: $primary-color;
-                        padding: 0.1rem 0.1rem;
-                        border-radius: 5px;
-                        color: $details-color;     
+                        opacity: 0;
                     }
-                }
 
+                    &:focus,
+                    &:not(:placeholder-shown) {
+                        border: 2px solid $details-color;
+
+                        & + label {
+                            transform: translateY(-0.8rem);
+                            font-size: 0.8rem;
+                            background-color: $primary-color;
+                            padding: 0.1rem 0.1rem;
+                            border-radius: 5px;
+                            color: $details-color;     
+                        }
+                    }
+
+                }
             }
         }
-    }
 
+    }
 }

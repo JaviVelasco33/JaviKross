@@ -11,7 +11,7 @@
 // Desktop
 @include respond-to(desktop) {
     // Login Button
-        .login-button {
+    .login-button {
         margin-top: 1rem;
         padding: 0.75rem;
         width: 50%;
@@ -23,11 +23,11 @@
         background: rgba($details-color, 0.2);
         font-size: 1rem;
         cursor: pointer;
-        transform: scale(0.9);
+        // transform: scale(0.9);
         transition: all 0.3s ease;
         z-index: 2;
 
-        &:hover {
+        &:hover, &:focus {
             background: color.scale($details-color, $lightness: 25%);
             transform: scale(1.1);
             width: 80%;
@@ -38,6 +38,31 @@
             color: $primary-color;
             border: none;
             box-shadow: -2px 5px 10px rgba(0, 0, 0, 0.5), inset -3px 3px 5px rgba(255, 255, 255, 0.5), inset 3px -3px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        &:active {
+            transform: scale(1);
+            background: color.scale($details-color, $lightness: 0%);
+        }
+    }
+
+    .filter-order {
+        background: none;
+        border: 1px solid #333;
+        color: white;
+        border-radius: 0 8px 8px 0;
+        padding: 0.17rem 0.5rem;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        background-color: $dark-color;
+
+        &:hover {
+            background-color: $details-color;
+            color: $dark-color;
+        }
+
+        &:active {
+            background: color.scale($details-color, $lightness: -30%);
         }
     }
 

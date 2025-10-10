@@ -15,9 +15,14 @@ function VideoPage() {
     
     console.log(video.videoFile); 
     return (
-        <div className="videoPage-container">
-            <VideoPlayer title={video.title} videoFile={video.videoFile} />
-            <VideoLikes videoId={video.id} />
+        <div className="video-page">
+            <div className="videoPage-container">
+                <VideoPlayer title={video.title} videoFile={video.videoFile} />
+                <VideoLikes videoId={video.id} />
+
+                {/* // TODO: Add component recomendations */}
+                
+            </div>
         </div>
     );
 

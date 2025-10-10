@@ -1,4 +1,6 @@
 @use '../../global' as *;
+@use "sass:color";
+
 
 // Mobile first
 
@@ -10,24 +12,27 @@
 
 // Desktop
 @include respond-to(desktop) {
-    .video-player {
+    .videoPlayer-container {
         display: flex;
         flex-direction: column;
         align-items: start;
-        width: 65%;
+        width: 70%;
         height: auto;
-        color: white;
+        color: $primary-color;
 
-        video {
+        .video-player {
             width: 100%;
             height: 100%;
             border-radius: 8px;
+            box-shadow: 0px 0px 15px rgba($dark-color, 0.2);
+            font-family: $primary-font;
         }
 
         h1 {
             margin-top: 1.5rem;
             font-size: 1.5rem;
             text-align: center;
+            color: $primary-color;
         }
     }
 }

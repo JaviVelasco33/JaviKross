@@ -15,20 +15,21 @@
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        gap: 10px;
+        gap: 1rem;
 
         button {
             background: none;
-            border: 1px solid #444;
+            border: 1px solid $details-color;
             border-radius: 6px;
             padding: 5px 10px;
-            color: white;
+            color: $primary-color;
             cursor: pointer;
             transition: all 0.2s ease;
+            background-color: $dark-color;
 
             &.active {
-                background-color: wheat;
-                border-color: wheat;
+                background-color: $details-color;
+                border-color: $details-color;
             }
 
             &:hover {
@@ -37,9 +38,14 @@
         }
 
         span {
-            margin-left: 10px;
-            font-size: 14px;
-            color: #ccc;
+            font-size: 1rem;
+            color: $primary-color;
+        }
+
+        h1 {
+            margin-left: 1rem;
+            font-size: 1rem;
+            color: $primary-color;
         }
     }
 }

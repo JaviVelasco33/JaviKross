@@ -10,7 +10,7 @@ function LoginPage() {
         <div className="login-page">
             <LoginBG />
             <div className="login-content">
-                    <Logo />
+                    <Logo  className="logo-login"/>
                     <LoginForm />
             </div>
             <div className="neon-bg">

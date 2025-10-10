@@ -1,11 +1,44 @@
 @use '../global' as *;
 
-.home-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    color: $primary-color;
-    background-color: $dark-color;
+// Mobile first
+
+
+// Tablet
+@include respond-to(tablet) {
+
+}
+
+// Desktop
+@include respond-to(desktop) {
+    .home-page {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        color: $dark-color;
+        position: relative;
+
+        // background
+        &::before {
+            content: '';
+            position: fixed;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: $dark-color url('/src/assets/images/logos/logo-bg.png');
+            background-repeat: repeat;
+            background-size: 20rem;
+            background-attachment: fixed;
+            transform: rotate(345deg);
+            opacity: 0.05;
+            filter: blur(3px);
+            z-index: -1;
+        }
+        
+        .main-content {
+            // width: 100%;
+            padding: 0 8rem;
+        }
+    }
 }

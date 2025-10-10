@@ -3,7 +3,7 @@ import "../../styles/components/CustomButton/_CustomButton.scss";
 
 interface CustomButtonProps {
     className: string;
-    label?: string;
+    label?: React.ReactNode;
     onClick?: () => void;
     type?: "button" | "submit" | "reset";
     disabled?: boolean;

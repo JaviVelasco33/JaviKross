@@ -6,10 +6,9 @@ import { useEffect, useState } from "react";
 import "@/styles/Pages/_HomePage.scss";
 
 
-function HomePage() {
+export default function HomePage() {
     const [videos, setVideos] = useState<Video[]>([]);
     const [query, setQuery] = useState("");
-
 
     useEffect(() => {
         setVideos(videosData);
@@ -18,10 +17,9 @@ function HomePage() {
     return (
         <div className="home-page">
             <Header onSearch={setQuery} />
-            <VideoGallery videos={videos} query={query} />
-
+            <div className="main-content">
+                <VideoGallery videos={videos} query={query} />
+            </div>
         </div>
     );
 }
-
-export default HomePage;

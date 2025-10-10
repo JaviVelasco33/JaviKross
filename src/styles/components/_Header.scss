@@ -17,16 +17,17 @@
         align-items: center;
         background: rgba($dark-color, 0.7);
         backdrop-filter: blur(3px);
-        padding: 1rem 5rem;
+        padding-block: 1rem;
         position: sticky;
         top: 0;
         left: 0;
         z-index: 10;
 
-        .header-logo {
+        .logo-header {
             display: flex;
             align-items: center;
             margin: 0 2rem;
+            width: 8rem;
         }
 
         .header-actions {

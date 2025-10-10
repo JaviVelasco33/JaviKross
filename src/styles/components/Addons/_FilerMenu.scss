@@ -1,0 +1,36 @@
+@use '../../global' as *;
+
+// Mobile first
+
+// Tablet
+@include respond-to(tablet) {
+}
+
+// Desktop
+@include respond-to(desktop) {
+    .filter-menu {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-left: auto;
+
+        .filter-select {
+            appearance: none;
+            background-color: $dark-color;
+            color: $primary-color;
+            padding: 0.5rem 1rem;
+            border: 1px solid #333;
+            border-radius: 8px 0 0 8px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: border 0.2s;
+    
+            &:hover,
+            &:focus {
+                border-color: $details-color;
+                outline: none;
+            }
+        }
+    }
+}
+
