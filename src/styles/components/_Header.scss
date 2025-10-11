@@ -11,6 +11,7 @@
 // Desktop
 @include respond-to(desktop) {
     .header {
+        position: fixed;
         display: flex;
         width: 100%;
         justify-content: space-between;
@@ -18,7 +19,6 @@
         background: rgba($dark-color, 0.7);
         backdrop-filter: blur(3px);
         padding-block: 1rem;
-        position: sticky;
         top: 0;
         left: 0;
         z-index: 10;

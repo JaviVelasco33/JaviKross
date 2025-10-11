@@ -1,0 +1,89 @@
+@use '../../global.scss' as *;
+
+.hero-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: $primary-color;
+    padding-block: 30rem;
+    overflow: hidden;
+    
+    .hero-bg {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        height: auto; 
+        opacity: 0.7;
+        transform: translate(-60%, -42%); 
+        filter: blur(10px);
+        z-index: -1;
+        animation: move-bg 60s ease-in-out infinite;
+    }
+    
+    h1 {
+        font-size: 3rem;
+        z-index: 2;
+        text-shadow: $dark-color -10px 10px 10px;
+        animation: move-text 30s ease-in-out reverse infinite;
+    }
+
+    .arrow-down {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 300%);
+        width: 6rem;
+        height: auto;
+        color: $primary-color;
+        filter: drop-shadow(1px 3px 3px $dark-color);
+        animation: move-arrow 1s ease-in-out infinite alternate;
+    }
+}
+
+// Animations
+@keyframes move-bg {
+    0% {
+        transform: translate(-60%, -42%) ;
+    }
+    20% {
+        transform: translate(-61%, -43%);
+    }
+    40% {
+        transform: translate(-61%, -41%);
+    }
+    60% {
+        transform: translate(-59%, -43%);
+    }
+    80% {
+        transform: translate(-59%, -41%);
+    }
+    100% {
+        transform: translate(-60%, -42%);
+    }
+}
+
+@keyframes move-text {
+    0% {
+        text-shadow: $dark-color -10px 10px 10px;
+    }
+    50% {
+        text-shadow: $dark-color 10px 10px 10px;
+    }
+    100% {
+        text-shadow: $dark-color -10px 10px 10px;
+    }
+}
+
+@keyframes move-arrow {
+    0% {
+        transform: translate(-50%, 300%);
+    }
+    100% {
+        transform: translate(-50%, 350%);
+    }
+}
