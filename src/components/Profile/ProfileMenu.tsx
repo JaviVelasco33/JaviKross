@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "@/styles/components/Profile/_ProfileMenu.scss";
+import CustomButton from "../CustomButton/CustomButton";
 
 export function ProfileMenu() {
     const [open, setOpen] = useState(false);
@@ -40,8 +41,8 @@ export function ProfileMenu() {
 
             {open && (
                 <div className="dropdown-menu">
-                    <button onClick={handleEditProfile}>Edit Profile</button>
-                    <button onClick={handleLogout}>Logout</button>
+                    <CustomButton className="dropdown-item" label="Edit Profile" onClick={handleEditProfile} />
+                    <CustomButton className="dropdown-item" label="Logout" onClick={handleLogout} />
                 </div>
             )}
         </div>

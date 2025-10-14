@@ -14,7 +14,6 @@
         position: relative;
         cursor: pointer;
         padding: 0 1rem;
-        // transition: all 0.3s ease;
 
         .poster {
             display: inline-block;
@@ -33,20 +32,19 @@
 
         .video-info {
             padding: 0 0.3rem;
-            font-size: 0.7rem;
-            color: white;
+            font-size: 1rem;
+            color: $primary-color;
             opacity: 0;
             transition: opacity 0.5s ease;
 
             &:hover {
                 opacity: 1;
-                font-size: 1rem;
             }
         }
 
         &.hovered {
             z-index: 5;
-            transform: scale(1.1);
+            // transform: scale(1.1);
             transition: all 0.5s ease;
 
             .poster {

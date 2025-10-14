@@ -13,6 +13,8 @@
         align-items: center;
         justify-content: flex-end;
         margin-left: auto;
+        position: sticky;
+        top: 80px;
 
         .filter-select {
             appearance: none;

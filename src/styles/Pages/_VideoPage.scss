@@ -17,6 +17,7 @@
         height: 100vh;
         color: $dark-color;
         position: relative;
+        margin-top: 1rem;
 
         // background
         &::before {
@@ -41,8 +42,7 @@
             flex-direction: column;
             align-items: start;
             justify-content: center;
-            width: 100%;
-            height: 100%;
+            width: 90%;
             margin: auto 3rem;
         }
     }

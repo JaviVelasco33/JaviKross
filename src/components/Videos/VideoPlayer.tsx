@@ -14,7 +14,8 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({ title, videoFile }) => {
                 className="video-player"
                 src={videoFile}
                 controls
-                width={"640"}
+                autoPlay
+                
             />
             
             <h1>{title}</h1>
