@@ -1,11 +1,10 @@
-@use '../../global' as *;
+@use "../../global" as *;
+@use "sass:color";
 
 // Mobile first
 
-
 // Tablet
 @include respond-to(tablet) {
-
 }
 
 // Desktop
@@ -30,7 +29,7 @@
             font-size: 1rem;
 
             &.open {
-                width: 20rem; // Size on expand
+                width: 20rem;
                 opacity: 1;
             }
         }
@@ -40,13 +39,26 @@
             border: none;
             cursor: pointer;
             font-size: 1.8rem;
-            color: white;
+            color: $primary-color;
             transition: transform 0.2s ease;
             z-index: 2;
 
             &:hover {
                 transform: scale(1.2);
             }
+        }
+
+        .clear-icon {
+            background: none;
+            border: none;
+            left: -30%;
+            display: flex;
+            align-items: center;
+            width: 1.8rem;
+            color: color.scale($primary-color, $lightness: -50%);
+            cursor: pointer;
+            position: relative;
+            z-index: 2;
         }
     }
 }

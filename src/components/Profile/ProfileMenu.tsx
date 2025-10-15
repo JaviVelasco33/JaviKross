@@ -35,9 +35,9 @@ export function ProfileMenu() {
     
     return (
         <div ref={menuRef} className="profile-container">
-            <button className='profile-button' onClick={toggleMenu}>
-                👤
-            </button>
+            <CustomButton className={`profile-button ${open ? "open" : ""}`}
+            label={<img src="/src/assets/images/profilePics/user1.webp" />}
+            onClick={toggleMenu} />
 
             {open && (
                 <div className="dropdown-menu">

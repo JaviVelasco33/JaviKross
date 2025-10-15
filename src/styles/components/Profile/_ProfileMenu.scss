@@ -15,20 +15,6 @@
         position: relative;
         display: inline-block;
 
-        .profile-button {
-            background: grey;
-            border: none;
-            border-radius: 50%;
-            padding: 0.2rem;
-            font-size: 22px;
-            cursor: pointer;
-            transition: transform 0.2s ease;
-
-            &:hover {
-                transform: scale(1.2);
-            }
-        }
-
         .dropdown-menu {
             position: absolute;
             right: 0;
