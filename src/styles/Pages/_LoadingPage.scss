@@ -1,0 +1,56 @@
+@use "../global" as *;
+
+.loading-page {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+
+    .loader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 18rem;
+        height: 1rem;
+        border-radius: 20px;
+        color: $details-color;
+        border: 2px solid;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            margin: 2px;
+            inset: 0 100% 0 0;
+            border-radius: inherit;
+            background: $details-color;
+            animation: load-bar-anim 6s infinite;
+        }
+    }
+
+    .logo-loading {
+        width: 15rem;
+        animation: logo-glow 2s ease-in-out infinite;
+    }
+}
+
+@keyframes load-bar-anim {
+    100% {
+        inset: 0;
+    }
+}
+
+@keyframes logo-glow {
+    0%,
+    100% {
+        opacity: 0.7;
+        filter: drop-shadow(0 0 8px rgba($details-color, 0.3));
+    }
+    50% {
+        opacity: 1;
+        filter: drop-shadow(0 0 16px rgba($details-color, 0.6));
+    }
+}

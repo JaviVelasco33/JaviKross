@@ -3,12 +3,14 @@ import LoginPage from "./pages/LoginPage";
 import HomePage from "./pages/HomePage";
 import ProfilePage from "./pages/ProfilePage";
 import VideoPage from "./pages/VideoPage";
+import LoadingPage from "./pages/LoadingPage";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/login" element={<LoginPage />} />
+        <Route path="/loading" element={<LoadingPage />} />
         <Route path="/home" element={<HomePage />} />
         <Route path='/profile' element={<ProfilePage />} />
         <Route path="/video/:id" element={<VideoPage />} />

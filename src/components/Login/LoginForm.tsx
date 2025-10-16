@@ -9,7 +9,7 @@ const LoginForm: React.FC = () => {
 
     const handleEnter = () => {
         // Por ahora solo navega a /home sin login real
-        navigate("/home");
+        navigate("/loading");
     };
 
     return (
