@@ -46,7 +46,7 @@ export default function HomePage() {
 
     return (
         <div className="home-page">
-            <Header onSearch={setQuery} />
+            <Header query={query} setQuery={setQuery} />
             <HeroHome />
             <div ref={mainContentRef} className="main-content">
                 <VideoGallery videos={videos} query={query} />

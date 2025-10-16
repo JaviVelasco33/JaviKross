@@ -4,15 +4,16 @@ import { Logo } from "../Logo";
 import { ProfileMenu } from "../Profile/ProfileMenu";
 
 interface HeaderProps {
-    onSearch: (query: string) => void
+    query: string;
+    setQuery: React.Dispatch<React.SetStateAction<string>>;
 }
 
-export function Header({ onSearch }: HeaderProps) {
+export function Header({ query, setQuery }: HeaderProps) {
     return (
         <header className="header">
-            <Logo className="logo-header" />
+            <Logo className="logo-header" href="/home" />
             <div className="header-actions">
-                <SearchBar onSearch={onSearch} />
+                <SearchBar query={query} setQuery={setQuery} />
                 <ProfileMenu />
             </div>
         </header>

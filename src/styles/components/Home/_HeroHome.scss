@@ -29,7 +29,7 @@
         font-size: 3rem;
         z-index: 2;
         text-shadow: $dark-color -10px 10px 10px;
-        animation: move-text 30s ease-in-out reverse infinite;
+        animation: init-text 2s, move-text 30s ease-in-out reverse infinite;
     }
 
     .arrow-down {
@@ -64,6 +64,17 @@
     }
     100% {
         transform: translate(-60%, -42%);
+    }
+}
+
+@keyframes init-text {
+    0% {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;    
     }
 }
 

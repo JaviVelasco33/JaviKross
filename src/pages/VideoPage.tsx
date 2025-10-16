@@ -10,7 +10,7 @@ import "@/styles/Pages/_VideoPage.scss";
 function VideoPage() {
     const { id } = useParams<{ id: string }>();
     const video = videosData.find((v: Video) => v.id === Number(id));
-    const [, setQuery] = useState("");
+    const [query, setQuery] = useState("");
 
     useEffect(() => {
         if (video) {
@@ -26,7 +26,7 @@ function VideoPage() {
     console.log(video.videoFile); 
     return (
         <div className="video-page">
-            <Header onSearch={setQuery} />
+            <Header query={query} setQuery={setQuery} />
             
             <div className="videoPage-container">
                 <VideoPlayer title={video.title} videoFile={video.videoFile} />
