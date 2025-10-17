@@ -1,0 +1,23 @@
+@use "../../global" as *;
+
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18rem;
+    height: 1rem;
+    border-radius: 20px;
+    color: $details-color;
+    border: 2px solid;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        margin: 2px;
+        inset: 0 calc(100% - var(--tracked-progress)) 0 0;
+        border-radius: inherit;
+        background: $details-color;
+        transition: inset 0.1s linear;
+    }
+}

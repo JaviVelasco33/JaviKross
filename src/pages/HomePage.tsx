@@ -5,6 +5,7 @@ import type { Video } from "@/utils/search";
 import { useEffect, useRef, useState } from "react";
 import HeroHome from "@/components/Home/HeroHome";
 import { useLocation } from "react-router-dom";
+import LoadingPage from "./LoadingPage";
 
 import "@/styles/Pages/_HomePage.scss";
 
@@ -12,8 +13,24 @@ import "@/styles/Pages/_HomePage.scss";
 export default function HomePage() {
     const [videos, setVideos] = useState<Video[]>([]);
     const [query, setQuery] = useState("");
+    const [isLoading, setIsLoading] = useState(true);
+    const [trackedProgress, setTrackedProgress] = useState(0);
+    
     const mainContentRef = useRef<HTMLDivElement | null>(null);
     const location = useLocation();
+
+    useEffect(() => {
+        let loadProgress = 0;
+        const interval = setInterval(() => {
+            loadProgress += Math.random() * 10;
+            if (loadProgress >= 100) {
+                loadProgress = 100;
+                clearInterval(interval);
+                setIsLoading(false);
+            }
+            setTrackedProgress(loadProgress);
+        }, 200);
+    }, []);
 
     useEffect(() => {
         document.title = "JaviKross | Home";
@@ -26,11 +43,9 @@ export default function HomePage() {
     // Read global search from SearchBar
     useEffect(() => {
         const searchQuery = location.state?.query || "";
-
         if (typeof searchQuery !== "undefined") {
             setQuery(searchQuery);
         }
-
             // Scroll to main content only if query exists
             if (searchQuery) {
                 setTimeout(() => {
@@ -43,6 +58,10 @@ export default function HomePage() {
                 }, 150);
             }
         }, [location.state]);
+
+    if (isLoading) {
+        return <LoadingPage progress={trackedProgress} />;
+    }
 
     return (
         <div className="home-page">
