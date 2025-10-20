@@ -10,7 +10,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/login" element={<LoginPage />} />
-        <Route path="/loading" element={<LoadingPage />} />
+        <Route path="/loading" element={<LoadingPage progress={50} />} />
         <Route path="/home" element={<HomePage />} />
         <Route path='/profile' element={<ProfilePage />} />
         <Route path="/video/:id" element={<VideoPage />} />

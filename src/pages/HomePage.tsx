@@ -13,32 +13,21 @@ import "@/styles/Pages/_HomePage.scss";
 export default function HomePage() {
     const [videos, setVideos] = useState<Video[]>([]);
     const [query, setQuery] = useState("");
-    const [isLoading, setIsLoading] = useState(true);
-    const [trackedProgress, setTrackedProgress] = useState(0);
+    const [hasLoaded, setHasLoaded] = useState(false);
+    const [prog, setProg] = useState(0);
     
     const mainContentRef = useRef<HTMLDivElement | null>(null);
     const location = useLocation();
 
-    useEffect(() => {
-        let loadProgress = 0;
-        const interval = setInterval(() => {
-            loadProgress += Math.random() * 10;
-            if (loadProgress >= 100) {
-                loadProgress = 100;
-                clearInterval(interval);
-                setIsLoading(false);
-            }
-            setTrackedProgress(loadProgress);
-        }, 200);
-    }, []);
-
-    useEffect(() => {
-        document.title = "JaviKross | Home";
-    }, []);
-
-    useEffect(() => {
-        setVideos(videosData);
-    }, []);
+    const randomInt = Math.floor(Math.random() * (500 - 100)) + 100;
+    
+        useEffect(() => {
+            document.title = "JaviKross | Home";
+        }, []);
+    
+        useEffect(() => {
+            setVideos(videosData);
+        }, []);
 
     // Read global search from SearchBar
     useEffect(() => {
@@ -59,8 +48,24 @@ export default function HomePage() {
             }
         }, [location.state]);
 
-    if (isLoading) {
-        return <LoadingPage progress={trackedProgress} />;
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setProg(prev => {
+                if (prev >= 100) {
+                    clearInterval(interval);
+                    setHasLoaded(true);
+                    return prev;
+                }
+                return prev + 5;
+            });
+        }, randomInt);
+        console.log(hasLoaded);
+
+        return () => clearInterval(interval);
+    }, [randomInt, hasLoaded]);
+
+    if (!hasLoaded) {
+        return <LoadingPage progress={prog} />;
     }
 
     return (

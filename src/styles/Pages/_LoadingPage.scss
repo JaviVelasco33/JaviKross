@@ -8,6 +8,14 @@
     align-items: center;
     flex-direction: column;
     gap: 2rem;
+    z-index: 9999;
+    opacity: 1;
+
+    &.fade-out {
+        opacity: 0;
+        transform: scale(1.02);
+        pointer-events: none;
+    }
 
     .logo-loading {
         width: 15rem;
