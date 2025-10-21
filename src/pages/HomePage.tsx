@@ -66,7 +66,6 @@ export default function HomePage() {
                 return prev + 5;
             });
         }, randomInt);
-        console.log(hasLoaded);
 
         return () => clearInterval(interval);
     }, [randomInt, hasLoaded]);
