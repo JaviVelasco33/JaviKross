@@ -13,7 +13,10 @@ import "@/styles/Pages/_HomePage.scss";
 export default function HomePage() {
     const [videos, setVideos] = useState<Video[]>([]);
     const [query, setQuery] = useState("");
-    const [hasLoaded, setHasLoaded] = useState(false);
+    const [hasLoaded, setHasLoaded] = useState(() => {
+        const saved = sessionStorage.getItem("hasLoaded");
+        return saved ? JSON.parse(saved) : false;
+    });
     const [prog, setProg] = useState(0);
     
     const mainContentRef = useRef<HTMLDivElement | null>(null);
@@ -47,6 +50,10 @@ export default function HomePage() {
                 }, 150);
             }
         }, [location.state]);
+
+    useEffect(() => {
+        sessionStorage.setItem("hasLoaded", JSON.stringify(hasLoaded));
+    }, [hasLoaded]);
 
     useEffect(() => {
         const interval = setInterval(() => {
