@@ -84,6 +84,7 @@ export default function HomePage() {
                 <Header query={query} setQuery={setQuery} />
                 <HeroHome />
                 <div ref={mainContentRef} className="main-content">
+                    <h1>Videos</h1>
                     <VideoGallery videos={videos} query={query} />
                 </div>
             </div>

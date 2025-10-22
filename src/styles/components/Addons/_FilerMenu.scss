@@ -15,6 +15,11 @@
         margin-left: auto;
         position: sticky;
         top: 80px;
+        right: 0;
+        padding-right: 10rem;
+        max-width: 100%;
+        box-sizing: border-box;
+        width: fit-content;
 
         .filter-select {
             appearance: none;
@@ -26,6 +31,8 @@
             font-size: 0.9rem;
             cursor: pointer;
             transition: border 0.2s;
+            overflow: hidden;
+            text-overflow: ellipsis;
     
             &:hover,
             &:focus {

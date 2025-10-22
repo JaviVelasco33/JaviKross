@@ -6,37 +6,40 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 90%;
     color: $primary-color;
-    padding-block: 30rem;
+    padding-block: 25rem;
     overflow: hidden;
     
     .hero-bg {
-        position: absolute;
+        position: fixed;
         width: 100%;
-        height: auto; 
-        opacity: 0.7;
-        filter: blur(15px);
-        z-index: -1;
+        height: 100vh; 
+        opacity: 0.5;
+        object-fit: cover;
+        filter: blur(1px);
+        z-index: -5;
         animation: move-bg 60s ease-in-out infinite;
     }
     
     h1 {
+        position: fixed;
         font-size: 3rem;
-        z-index: 2;
+        z-index: -3;
         text-shadow: $dark-color -10px 10px 10px;
         animation: init-text 2s, move-text 30s ease-in-out reverse infinite;
     }
 
     .arrow-down {
-        position: absolute;
+        position: fixed;
         top: 50%;
         left: 50%;
         transform: translate(-50%, 300%);
         width: 6rem;
         height: auto;
         color: $primary-color;
+        z-index: -3;
         filter: drop-shadow(1px 3px 3px $dark-color);
         animation: move-arrow 1s ease-in-out infinite alternate;
     }
@@ -89,9 +92,9 @@
 
 @keyframes move-arrow {
     0% {
-        transform: translate(-50%, 300%);
+        transform: translate(-50%, 200%);
     }
     100% {
-        transform: translate(-50%, 350%);
+        transform: translate(-50%, 250%);
     }
 }
