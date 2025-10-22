@@ -5,6 +5,8 @@ import type { Video } from "@/utils/search";
 import VideoPlayer from "@/components/Videos/VideoPlayer";
 import VideoLikes from "@/components/Videos/VideoLikes";
 import { Header } from "@/components/Header/Header";
+import VideosSuggested from "../components/Videos/VideosSuggested";
+
 import "@/styles/Pages/_VideoPage.scss";
 
 function VideoPage() {
@@ -22,8 +24,6 @@ function VideoPage() {
 
     if (!video) return <div>Video not found</div>;
     
-    
-    console.log(video.videoFile); 
     return (
         <div className="video-page">
             <Header query={query} setQuery={setQuery} />
@@ -31,9 +31,11 @@ function VideoPage() {
             <div className="videoPage-container">
                 <VideoPlayer title={video.title} videoFile={video.videoFile} />
                 <VideoLikes videoId={video.id} />
-
+            </div>
                 {/* // TODO: Add component recomendations */}
-                
+            <div className="suggested-videos">
+                <h2>Otros vídeos</h2>
+                <VideosSuggested />
             </div>
         </div>
     );

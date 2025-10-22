@@ -18,6 +18,7 @@ export default function HomePage() {
         return saved ? JSON.parse(saved) : false;
     });
     const [prog, setProg] = useState(0);
+    const [stopRender, setStopRender] = useState(false);
     
     const mainContentRef = useRef<HTMLDivElement | null>(null);
     const location = useLocation();
@@ -70,16 +71,21 @@ export default function HomePage() {
         return () => clearInterval(interval);
     }, [randomInt, hasLoaded]);
 
-    if (!hasLoaded) {
-        return <LoadingPage progress={prog} />;
+    if (hasLoaded) {
+        setTimeout(() => {
+            setStopRender(true);
+        }, 1000);
     }
 
     return (
-        <div className="home-page">
-            <Header query={query} setQuery={setQuery} />
-            <HeroHome />
-            <div ref={mainContentRef} className="main-content">
-                <VideoGallery videos={videos} query={query} />
+        <div>
+            {!stopRender && <LoadingPage progress={prog} fadeOut={hasLoaded} />}
+            <div className="home-page">
+                <Header query={query} setQuery={setQuery} />
+                <HeroHome />
+                <div ref={mainContentRef} className="main-content">
+                    <VideoGallery videos={videos} query={query} />
+                </div>
             </div>
         </div>
     );

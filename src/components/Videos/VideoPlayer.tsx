@@ -7,17 +7,14 @@ interface VideoPlayerProps {
 }
 
 const VideoPlayer: React.FC<VideoPlayerProps> = ({ title, videoFile }) => {
-    console.log(videoFile);
     return (
         <div className="videoPlayer-container">
             <video
                 className="video-player"
                 src={videoFile}
                 controls
-                autoPlay
-                
+                autoPlay          
             />
-            
             <h1>{title}</h1>
         </div>
     );
