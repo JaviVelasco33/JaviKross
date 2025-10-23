@@ -1,10 +1,9 @@
-import React from "react";
 import { useNavigate } from "react-router-dom";
-import "@/styles/Login/_LoginForm.scss";
 import CustomButton from "../CustomButton/CustomButton";
 
+import "@/styles/Login/_LoginForm.scss";
 
-const LoginForm: React.FC = () => {
+const LoginForm = () => {
     const navigate = useNavigate();
 
     function handleEnter () {

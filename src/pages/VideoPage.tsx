@@ -28,14 +28,16 @@ const VideoPage = () => {
         <div className="video-page">
             <Header query={query} setQuery={setQuery} />
             
-            <div className="videoPage-container">
-                <VideoPlayer title={video.title} videoFile={video.videoFile} />
-                <VideoLikes videoId={video.id} />
-            </div>
-                {/* // TODO: Add component recomendations */}
-            <div className="suggested-videos">
-                <h2>Otros vídeos</h2>
-                <VideosSuggested />
+            <div className="main-content">
+                <div className="video-container">
+                    <VideoPlayer title={video.title} videoFile={video.videoFile} />
+                    <VideoLikes videoId={video.id} />
+                </div>
+                    {/* // TODO: Add component recomendations */}
+                <div className="suggested-videos">
+                    <h2>Otros vídeos</h2>
+                    <VideosSuggested />
+                </div>
             </div>
         </div>
     );

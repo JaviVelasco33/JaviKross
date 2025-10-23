@@ -1,5 +1,4 @@
 @use "../global" as *;
-@use "sass:color";
 
 // Mobile first
 
@@ -68,10 +67,8 @@
                             color: $details-color;     
                         }
                     }
-
                 }
             }
         }
-
     }
 }

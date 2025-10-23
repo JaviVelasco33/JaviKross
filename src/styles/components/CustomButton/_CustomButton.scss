@@ -10,6 +10,16 @@
 
 // Desktop
 @include respond-to(desktop) {
+    // Base
+    .custom-button{
+        background: none;
+        color: inherit;
+        border: none;
+        padding: 0;
+        font: inherit;
+        cursor: pointer;
+        outline: inherit;
+    }
     // Login Button
     .login-button {
         margin-top: 1rem;
@@ -44,12 +54,13 @@
         }
     }
 
+    // Filter button
     .filter-order {
         background: none;
         border: 1px solid #333;
         color: white;
         border-radius: 0 8px 8px 0;
-        padding: 0.17rem 0.5rem;
+        padding: 0.2rem 0.5rem;
         cursor: pointer;
         transition: all 0.2s ease;
         background-color: $dark-color;
@@ -64,6 +75,7 @@
         }
     }
 
+    // Search button
     .search-button {
         background: none;
         border: none;
@@ -77,6 +89,7 @@
         }
     }
 
+    // Profile button
     .profile-button {
         background: color.scale($dark-color, $lightness: 30%); ;
         border: none;
@@ -120,6 +133,7 @@
         }
     }
 
+    // Dropdown menu
     .dropdown-item{
         background: none;
         color: white;
@@ -135,6 +149,26 @@
 
         &:active {
             background: color.scale($dark-color, $lightness: -30%);
+        }
+    }
+
+    // Save button
+    .save-button{
+        width: fit-content;
+        height: fit-content;
+        margin: 0;
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        border-radius: 15px;
+        background-color: rgba($dark-color, 0.2);
+        border: 2px solid rgba($dark-color, 0.1);
+        
+        &:hover {
+            background-color: rgba($details-color, 0.5);
+        }
+
+        &:active {
+            background-color: rgba($details-color, 0.7);
         }
     }
 }

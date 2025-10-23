@@ -1,7 +1,8 @@
-import "@/styles/components/_Header.scss";
 import SearchBar from "../Addons/SearchBar";
-import { Logo } from "../Logo";
-import { ProfileMenu } from "../Profile/ProfileMenu";
+import Logo from "../Logo";
+import ProfileMenu from "../Profile/ProfileMenu";
+
+import "@/styles/components/_Header.scss";
 
 interface HeaderProps {
     query: string;

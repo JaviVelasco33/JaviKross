@@ -24,6 +24,7 @@
             height: auto;
             background-color: $dark-color;
             z-index: -2;
+            box-sizing: border-box;
             
             // background
             &::before {
