@@ -5,9 +5,9 @@
         "year": 2021,
         "prio": 1,
         "tags": ["aftermovie", "resacón", "almáchar", "primer año", "right round", "créditos", "pursuit of happiness", "2021"],
-        "thumbnail": "/images/thumbs/MiniaturaJavikross2021.png",
-        "poster": "/images/posters/Poster2021.png",
-        "videoFile": "/videos/video.mp4"
+        "thumbnail": "/images/thumbs/MiniaturaJavikross2021.webp",
+        "poster": "/images/posters/Poster2021.webp",
+        "videoFile": "/videos/video.webm"
     },
     {
         "id": 2,
@@ -15,9 +15,9 @@
         "year": 2023,
         "prio": 3,
         "tags": ["presentación", "cantantes", "mapa", "2023"],
-        "thumbnail": "/images/thumbs/Mini_Horizontal_Presen_2023.png",
-        "poster": "/images/posters/Mini_Vertical_Presen_2023.png",
-        "videoFile": "/videos/video.mp4"
+        "thumbnail": "/images/thumbs/Mini_Horizontal_Presen_2023.webp",
+        "poster": "/images/posters/Mini_Vertical_Presen_2023.webp",
+        "videoFile": "/videos/video.webm"
     },
     {
         "id": 3,
@@ -25,9 +25,9 @@
         "year": 2023,
         "prio": 2,
         "tags": ["entrevistas", "cantantes", "almáchar", "2023"],
-        "thumbnail": "/images/thumbs/Mini_Horizontal_Entrevistas_2023.png",
-        "poster": "/images/posters/Mini_Vertical_Entrevistas_2023.png",
-        "videoFile": "/videos/video.mp4"
+        "thumbnail": "/images/thumbs/Mini_Horizontal_Entrevistas_2023.webp",
+        "poster": "/images/posters/Mini_Vertical_Entrevistas_2023.webp",
+        "videoFile": "/videos/video.webm"
     },
         {
         "id": 4,
@@ -35,9 +35,9 @@
         "year": 2023,
         "prio": 1,
         "tags": ["aftermovie", "cantantes", "almáchar", "where them girls at", "2023"],
-        "thumbnail": "/images/thumbs/MiniaturaJavikross2023.png",
-        "poster": "/images/posters/Poster2023.png",
-        "videoFile": "/videos/video.mp4"
+        "thumbnail": "/images/thumbs/MiniaturaJavikross2023.webp",
+        "poster": "/images/posters/Poster2023.webp",
+        "videoFile": "/videos/video.webm"
     },
         {
         "id": 5,
@@ -45,9 +45,9 @@
         "year": 2024,
         "prio": 3,
         "tags": ["presentación", "pirámide", "peliculas", "casa cristian", "2024"],
-        "thumbnail": "/images/thumbs/Mini_Horizontal_Presen_2024.png",
-        "poster": "/images/posters/Mini_Vertical_Presen_2024.png",
-        "videoFile": "/videos/video.mp4"
+        "thumbnail": "/images/thumbs/Mini_Horizontal_Presen_2024.webp",
+        "poster": "/images/posters/Mini_Vertical_Presen_2024.webp",
+        "videoFile": "/videos/video.webm"
     },
         {
         "id": 6,
@@ -55,9 +55,9 @@
         "year": 2024,
         "prio": 2,
         "tags": ["tomas falsas", "peliculas", "casa cristian", "2024"],
-        "thumbnail": "/images/thumbs/Mini_Horizontal_TFalsas_2024.png",
-        "poster": "/images/posters/Mini_Vertical_TFalsas_2024.png",
-        "videoFile": "/videos/video.mp4"
+        "thumbnail": "/images/thumbs/Mini_Horizontal_TFalsas_2024.webp",
+        "poster": "/images/posters/Mini_Vertical_TFalsas_2024.webp",
+        "videoFile": "/videos/video.webm"
     },
         {
         "id": 7,
@@ -65,9 +65,9 @@
         "year": 2024,
         "prio": 1,
         "tags": ["aftermovie", "peliculas", "trabuco", "regreso al futuro", "club cant handle me", "hot", "pitbull", "2024"],
-        "thumbnail": "/images/thumbs/MiniaturaJavikross2024.png",
-        "poster": "/images/posters/Poster2024.png",
-        "videoFile": "/videos/video.mp4"
+        "thumbnail": "/images/thumbs/MiniaturaJavikross2024.webp",
+        "poster": "/images/posters/Poster2024.webp",
+        "videoFile": "/videos/video.webm"
     }
     
 ]

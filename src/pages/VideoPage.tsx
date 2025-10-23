@@ -4,12 +4,12 @@ import videosData from "@/data/videos.json";
 import type { Video } from "@/utils/search";
 import VideoPlayer from "@/components/Videos/VideoPlayer";
 import VideoLikes from "@/components/Videos/VideoLikes";
-import { Header } from "@/components/Header/Header";
+import Header from "@/components/Header/Header";
 import VideosSuggested from "../components/Videos/VideosSuggested";
 
 import "@/styles/Pages/_VideoPage.scss";
 
-function VideoPage() {
+const VideoPage = () => {
     const { id } = useParams<{ id: string }>();
     const video = videosData.find((v: Video) => v.id === Number(id));
     const [query, setQuery] = useState("");
@@ -39,7 +39,6 @@ function VideoPage() {
             </div>
         </div>
     );
-
-}
+};
 
 export default VideoPage;

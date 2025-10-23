@@ -3,22 +3,22 @@ import { useNavigate } from "react-router-dom";
 import "@/styles/components/Profile/_ProfileMenu.scss";
 import CustomButton from "../CustomButton/CustomButton";
 
-export function ProfileMenu() {
+const ProfileMenu = () => {
     const [open, setOpen] = useState(false);
     const menuRef = useRef<HTMLDivElement>(null);
     const navigate = useNavigate();
 
-    const toggleMenu = () => {
+    function toggleMenu() {
         setOpen(!open);
     };
 
-    const handleLogout = () => {
+    function handleLogout() {
         console.log("Logging out...");
         navigate("/login");
         
     };
 
-    const handleEditProfile = () => {
+    function handleEditProfile() {
         navigate("/profile");
     };
 
@@ -48,3 +48,5 @@ export function ProfileMenu() {
         </div>
     );
 };
+
+export default ProfileMenu;

@@ -2,9 +2,9 @@ import "@/styles/Pages/_LoginPage.scss";
 import { useEffect } from "react";
 import LoginBG from "../components/Login/LoginBG";
 import LoginForm from "../components/Login/LoginForm";
-import { Logo } from "../components/Logo";
+import Logo from "../components/Logo";
 
-function LoginPage() {
+const LoginPage = () => {
     useEffect(() => {
         document.title = "JaviKross | Login";
     }, []);
@@ -21,6 +21,6 @@ function LoginPage() {
             </div>
         </div>
     );
-}
+};
 
 export default LoginPage;

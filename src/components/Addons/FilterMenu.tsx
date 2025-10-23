@@ -12,7 +12,7 @@ interface FilterMenuProps {
     onFilterChange: (filter: Filter) => void;
 }
 
-export const FilterMenu: React.FC<FilterMenuProps> = ({ onFilterChange }) => {
+const FilterMenu: React.FC<FilterMenuProps> = ({ onFilterChange }) => {
     const [filter, setFilter] = useState<Filter>({
         type: "year",
         prioFocus: null,
@@ -31,7 +31,7 @@ export const FilterMenu: React.FC<FilterMenuProps> = ({ onFilterChange }) => {
         onFilterChange(newFilter);
     };
 
-    const toggleOrder = () => {
+    function toggleOrder() {
         const newOrder = filter.order === "asc" ? "desc" : "asc";
         const newFilter = { ...filter, order: newOrder } as Filter;
         setFilter(newFilter);
@@ -67,3 +67,5 @@ export const FilterMenu: React.FC<FilterMenuProps> = ({ onFilterChange }) => {
         </div>
     );
 };
+
+export default FilterMenu;

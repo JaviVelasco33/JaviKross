@@ -7,7 +7,7 @@ import CustomButton from "../CustomButton/CustomButton";
 const LoginForm: React.FC = () => {
     const navigate = useNavigate();
 
-    const handleEnter = () => {
+    function handleEnter () {
         // Por ahora solo navega a /home sin login real
         navigate("/home");
     };

@@ -8,7 +8,7 @@ interface SearchBarProps {
     setQuery: React.Dispatch<React.SetStateAction<string>>;
 }
 
-export function SearchBar({ query, setQuery }: SearchBarProps) {
+const SearchBar = ({ query, setQuery }: SearchBarProps) => {
     const [localQuery, setLocalQuery] = useState<string>(query);
     const [isOpen, setIsOpen] = useState(false);
     const inputRef = useRef<HTMLInputElement>(null);
@@ -50,7 +50,7 @@ export function SearchBar({ query, setQuery }: SearchBarProps) {
     };
 
     // Manage Icon Click
-    const handleIconClick = () => {
+    function handleIconClick() {
         if (isOpen && localQuery.trim() !== "") {
             formRef.current?.requestSubmit();
         } else {
@@ -62,7 +62,7 @@ export function SearchBar({ query, setQuery }: SearchBarProps) {
     };
 
     // Clear input
-    const handleClear = () => {
+    function handleClear() {
         setLocalQuery("");
         setQuery("");
         inputRef.current?.focus();
@@ -116,4 +116,6 @@ export function SearchBar({ query, setQuery }: SearchBarProps) {
                 onClick={handleIconClick} />
         </form>
     );
-}
+};
+
+export default SearchBar;

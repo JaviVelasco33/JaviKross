@@ -29,7 +29,7 @@ const VideoLikes: React.FC<VideoLikesProps> = ({ videoId }) => {
         localStorage.setItem(`video-${videoId}-vote`, String(isLiked));
     }, [likes, isLiked, videoId]);
 
-    const handleVote = () => {
+    function handleVote() {
         console.log(isLiked);
         setIsLiked(!isLiked);
         if (isLiked) {
@@ -39,7 +39,7 @@ const VideoLikes: React.FC<VideoLikesProps> = ({ videoId }) => {
         }
     };
 
-    const handleDislike = () => {
+    function handleDislike() {
         setIsDisliked(!isDisliked);
         handleVote();
         setTimeout(() => {

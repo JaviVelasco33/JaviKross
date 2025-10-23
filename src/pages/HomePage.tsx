@@ -1,5 +1,5 @@
-import { Header } from "@/components/Header/Header";
-import { VideoGallery } from "@/components/Videos/VideoGallery";
+import Header from "@/components/Header/Header";
+import VideoGallery from "@/components/Videos/VideoGallery";
 import videosData from "@/data/videos.json";
 import type { Video } from "@/utils/search";
 import { useEffect, useRef, useState } from "react";
@@ -10,7 +10,7 @@ import LoadingPage from "./LoadingPage";
 import "@/styles/Pages/_HomePage.scss";
 
 
-export default function HomePage() {
+const HomePage = () => {
     const [videos, setVideos] = useState<Video[]>([]);
     const [query, setQuery] = useState("");
     const [hasLoaded, setHasLoaded] = useState(() => {
@@ -84,10 +84,12 @@ export default function HomePage() {
                 <Header query={query} setQuery={setQuery} />
                 <HeroHome />
                 <div ref={mainContentRef} className="main-content">
-                    <h1>Videos</h1>
+                    <h1>Vídeos</h1>
                     <VideoGallery videos={videos} query={query} />
                 </div>
             </div>
         </div>
     );
-}
+};
+
+export default HomePage;

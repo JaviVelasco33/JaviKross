@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { Header } from "../components/Header/Header";
+import { useEffect, useState } from "react";
+import Header from "../components/Header/Header";
 
 const ProfilePage = () => {
     const [query, setQuery] = useState("");

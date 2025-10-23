@@ -4,7 +4,7 @@ import videosData from "@/data/videos.json";
 import "@/styles/components/Videos/_VideosSuggested.scss";
 
 
-export default function VideosSuggested () {
+const VideosSuggested = () => {
     const getRandomVideos = (count: number) => {
         const videos = [...videosData]; // Create a copy of the array
         const randomVideos = [];
@@ -32,3 +32,5 @@ export default function VideosSuggested () {
         </div>
     );
 };
+
+export default VideosSuggested;

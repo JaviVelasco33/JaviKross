@@ -7,7 +7,7 @@ interface VideoProps {
     thumbnail: string;
 }
 
-export default function VideoCard({ id, title,  thumbnail }: VideoProps) {
+const SuggestedThumbs = ({ id, title,  thumbnail }: VideoProps) => {
     const navigate = useNavigate();
 
     const handleClick = () => {
@@ -22,4 +22,6 @@ export default function VideoCard({ id, title,  thumbnail }: VideoProps) {
             <img src={thumbnail} alt={title} className="thumbnail" />
         </div>
     );
-}
+};
+
+export default SuggestedThumbs;

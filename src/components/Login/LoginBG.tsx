@@ -10,7 +10,7 @@ const LoginBG: React.FC = () => {
             muted
             playsInline
         >
-            <source src="/videos/video.mp4" type="video/mp4" />
+            <source src="/videos/video.webm" type="video/webm" />
             Tu navegador no soporta el video de fondo.
         </video>
     );

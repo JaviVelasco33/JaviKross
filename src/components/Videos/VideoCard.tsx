@@ -11,7 +11,7 @@ interface VideoProps {
     poster: string;
 }
 
-export default function VideoCard({ id, title,  thumbnail, poster }: VideoProps) {
+const VideoCard = ({ id, title,  thumbnail, poster }: VideoProps) => {
     const [isHovered, setIsHovered] = useState(false);
     const navigate = useNavigate();
 
@@ -35,4 +35,6 @@ export default function VideoCard({ id, title,  thumbnail, poster }: VideoProps)
             </div>
         </div>
     );
-}
+};
+
+export default VideoCard;

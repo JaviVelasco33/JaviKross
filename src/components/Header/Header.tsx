@@ -1,5 +1,5 @@
 import "@/styles/components/_Header.scss";
-import { SearchBar } from "../Addons/SearchBar";
+import SearchBar from "../Addons/SearchBar";
 import { Logo } from "../Logo";
 import { ProfileMenu } from "../Profile/ProfileMenu";
 
@@ -8,7 +8,7 @@ interface HeaderProps {
     setQuery: React.Dispatch<React.SetStateAction<string>>;
 }
 
-export function Header({ query, setQuery }: HeaderProps) {
+const Header = ({ query, setQuery }: HeaderProps) => {
     return (
         <header className="header">
             <Logo className="logo-header" href="/home" />
@@ -18,4 +18,6 @@ export function Header({ query, setQuery }: HeaderProps) {
             </div>
         </header>
     );
-}
+};
+
+export default Header;

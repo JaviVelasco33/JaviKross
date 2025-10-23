@@ -2,7 +2,7 @@ import { useState, useMemo } from "react";
 import VideoCard from "./VideoCard";
 import { searchVideos } from "../../utils/search";
 import type { Video } from "../../utils/search";
-import { FilterMenu } from "../Addons/FilterMenu";
+import FilterMenu from "../Addons/FilterMenu";
 import type { Filter } from "../Addons/FilterMenu";
 import "@/styles/components/Videos/_VideoGallery.scss";
 
@@ -25,7 +25,7 @@ const getBasePrioORder = (focus: number) => {
     }
 };
 
-export function VideoGallery({ videos, query }: VideoGalleryProps) {
+const VideoGallery = ({ videos, query }: VideoGalleryProps) => {
 
     // Filter state
     const [filter, setFilter] = useState<Filter>({
@@ -148,4 +148,6 @@ export function VideoGallery({ videos, query }: VideoGalleryProps) {
             ))}
         </div>
     );
-}
+};
+
+export default VideoGallery;
